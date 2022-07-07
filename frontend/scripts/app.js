@@ -28,7 +28,7 @@ const quotes = [
         quote: "Before software can be reusable it first has to be usable",
         source: "Ralph Johnson",
         year: "220 B.C.",
-        color: '#98AAAE'
+        color: '#678cd6'
     },
 ];
 
