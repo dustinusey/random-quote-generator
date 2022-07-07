@@ -59,9 +59,10 @@ progressBar.addEventListener('animationend', () => {
     progressBar.style.animation = 'none';
 });
 
+
 // returns random array of objects
 function getRandomQuote() {
-    return quotes[Math.floor(Math.random() * quotes.length)]
+    return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
 // function to print random quote to page
