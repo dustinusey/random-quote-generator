@@ -1,0 +1,22 @@
+.play-btn {
+  @include bg(var(--primary));
+  @include center-flex;
+  @include same-size(45px);
+  @include radius(50%);
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-left: auto;
+  opacity: 0.6;
+  transition: opacity 0.3s, background 1s;
+  &:hover {
+    opacity: 1;
+  }
+  &.playing {
+    opacity: 1;
+  }
+  @include break(medium) {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}

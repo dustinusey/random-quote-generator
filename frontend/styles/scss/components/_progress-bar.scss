@@ -1,0 +1,31 @@
+.progress-bar-container {
+  @include bg(#a3acb747);
+  @include size(8px, 95%);
+  @include radius(25px);
+  margin: 2rem auto auto;
+  overflow: hidden;
+  opacity: 0;
+  &.container {
+    padding: 0;
+  }
+  .progress-bar {
+    @include flex(row, nowrap, flex-start, flex-start);
+    @include bg(var(--primary));
+    @include radius(25px);
+    height: 100%;
+    width: 0%;
+    transition: background 1s;
+  }
+  @include break(medium) {
+    width: 85%;
+  }
+}
+
+@keyframes progressGo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

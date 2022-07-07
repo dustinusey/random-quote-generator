@@ -10,9 +10,37 @@
     <link rel="stylesheet" href="./frontend/styles/css/app.css">
     <!-- fontawesome library -->
     <script src="https://kit.fontawesome.com/6e358658ed.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Random Quote Generator</title>
 </head>
 <body>
+
+    <main>
+        <!-- play button -->
+        <button class="play-btn" id="playBtn">
+            <!-- play icon -->
+            <i class="fa-solid fa-play"></i>
+            <!-- pause icon -->
+            <!-- <i class="fa-solid fa-pause"></i> -->
+        </button>
+
+        <!-- quote-container -->
+        <div class="quote-container container" id="quoteContainer">
+            <span>"</span><h1 id="quote"></h1><span>"</span>
+        </div>
+        <div class="quote-info-container container" id="quoteInfoContainer">
+            <span id="source" class="source"></span>
+            <span id="citation" class="citation"></span>
+            <span id="year" class="year"></span>
+        </div>
+        <div class="progress-bar-container container" id="progressBarContainer">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="tag-container container" id="tagContainer">
+            <p class="title">tags:</p>
+            <ul id="tagList" class="tag-list">
+            </ul>
+        </div>
+    </main>
     
     <script src="./frontend/scripts/app.js"></script>
 </body>
